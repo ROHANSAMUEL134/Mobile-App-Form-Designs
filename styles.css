@@ -41,7 +41,7 @@ h1{
 
 .container{
     height:fit-content;
-    width: fit-content;
+    max-width: 400px;
     padding: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -56,3 +56,19 @@ h1{
     }
 }
 
+.fa{
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(180deg,rgb(211, 9, 110),rgb(155, 0, 194));
+}
+
+.input-icon-container input{
+    height: 45px;
+    border-radius: 25px;
+    border: 1px solid rgb(173, 172, 172);
+}
+
+.input-icon-container i{
+    transform: translate(46px,2px);
+}
