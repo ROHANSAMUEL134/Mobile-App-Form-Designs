@@ -12,7 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 h1{
@@ -22,10 +22,21 @@ h1{
 .index-ul li{
     list-style: none;
     display: block;
+    background: linear-gradient(90deg,rgb(211, 9, 110),rgb(155, 0, 194));
+    margin: 10px auto;
+    width: 200px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.index-ul li:hover{
+    transform: scale(1.2);
 }
 
 .index-ul li a{
     text-decoration: none;
+    color: white;
 }
 
 .container{
