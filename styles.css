@@ -24,6 +24,13 @@ h1{
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 480px){
+    .container{
+        height:fit-content;
+        width: fit-content;
+    }
+}
+
 .container.index-container ul{
     transform: translateX(-20px);
 }
