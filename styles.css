@@ -83,3 +83,14 @@ button {
 input::placeholder{
     transform: translateX(50px);
 }
+
+label{
+    font-size: 13px;
+    font-weight: 500;
+    color: purple;
+}
+
+.label-holder{
+    display: flex;
+    justify-content: space-around;
+}
