@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    display: flex;
+    align-items: center;
+}
+
 h1{
     font-size: 25px;
 }
@@ -27,7 +32,6 @@ h1{
 @media only screen and (max-width: 480px) {
     .container {
         width: 100%;
-        min-height: 100vh;
         box-sizing: border-box;
         padding: 20px;
         margin: 0;
