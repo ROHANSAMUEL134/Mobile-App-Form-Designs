@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 h1{
@@ -44,6 +45,3 @@ h1{
     }
 }
 
-.container.index-container ul{
-    transform: translateX(-20px);
-}
