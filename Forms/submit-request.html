@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .container{
+            padding-top: 50px;
+        }
+        .input-icon-container{
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 15px;
+            color:rgb(109, 109, 109);
+        }
+        textarea{
+            border-radius: 20px;
+            resize: none;
+            padding: 10px;
+            width: 80%;
+        }
+        .input-icon-container i{
+            transform: translate(45px,2.5px);
+        }
+        input::placeholder{
+            transform: translateX(20px);
+        }
+        label{
+            float: left;
+        }
+        .verification{
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        .file-drop{
+            width: 80%;
+            height: 80px;
+            border: 1px solid rgb(173, 172, 172);
+            border-radius: 25px;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .file-drop p{
+            font-size: 13px;
+        }
+        .file-drop span{
+            color: rgb(155, 0, 194);
+        }
+        .file-acceptance{
+            font-size: 10px;
+            float: left;
+            transform: translateX(40px);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>SUBMIT REQUEST</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, veniam?</p>
+            <br>
+            <div class="label-holder">
+                <label>First Name</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <input placeholder="Enter First Name...">
+            </div>
+
+            <div class="label-holder">
+                <label>Last Name</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <input placeholder="Enter Last Name...">
+            </div>
+
+            <div class="label-holder">
+                <label>Email Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <input placeholder="Enter your Email Id...">
+            </div>
+
+            <div class="label-holder">
+                <label>Mobile Number</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <input placeholder="Enter your Mobile Number...">
+            </div>
+
+            <div class="label-holder">
+                <label>Subject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <input placeholder="Enter the Subject...">
+            </div>
+
+            <div class="label-holder">
+                <label>Message</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="input-icon-container">
+                <textarea rows="5" placeholder="Message within 400 Characters..!"></textarea>
+            </div>
+            <p class="verification">Please verify your Entered details before Submitting!</p>
+            <br>
+            <div class="label-holder">
+                <label>Attachments</label>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="file-drop">
+                <span>Add or Drag & Drop&nbsp;</span>
+                <p>&nbsp;your files here</p>
+            </div>
+            <p class="file-acceptance">Word, Excel, PDF, JPEG & PNG are accepted.</p>
+            <p class="file-acceptance">File size should be within 10mb</p>
+            <br>
+            <button>SIGN UP</button>
+        </div>        
+    </center>
+        
+</body>
+</html>
