@@ -19,18 +19,65 @@
         }
         .container{
             padding: 15px;
-            background-color: rgba(194, 194, 194, 0.363);
+            padding-top: 30px;
+            background: linear-gradient(to bottom, rgb(211, 9, 110) 0%, rgb(155, 0, 194) 40%, rgba(194, 194, 194, 0.363) 40%);
+    
+        }
+        @media only screen and (min-width: 800px) {
+            .container{
+                width:400px;
+            }
         }
         .personal-details{
-            padding: 10px;
+            padding:20px 10px;
+            margin-top: 20px;
             background-color: #fff;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        .container img{
+            margin-top: 50px;
+            width:125px;
+            height:125px;
+            border-radius: 50%;
+        }
+        span{
+            color: #fff;
+        }
+        span+i{
+            font-size: 13px;
+            color: rgb(109, 109, 109);
+            background-color: #fff;
+            padding:5px;
+            margin-left: 7px;
+            border-radius: 50%;
+        }
+        .fa-image{
+            position: absolute;
+            font-size: 18px;
+            color: rgb(109, 109, 109);
+            background: #fff;
+            transform: translate(95px,50px);
+        }
+        .sex{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .sex .radio-btn{
+            width:25px;
+            height:10px;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
     <center>
         <div class="container">
+            <i class="fa fa-image"></i>
+            <img src="../Profile.jpeg">
+            <br>
+            <span>Rohan Samuel</span>
+            <i class="fa-regular fa-edit"></i>
             <div class="personal-details">
                 <h1>USER PROFILE</h1>
                 <br>
@@ -74,6 +121,23 @@
                     <input placeholder="DD / MM / YYYY">
                 </div>
 
+                <div class="label-holder">
+                    <label>Sex</label>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div class="sex">
+                    <div class="radio-btn" id="male">
+                        <div class="inner-ball"></div>
+                    </div>
+                    <div class="radio-btn" id="female">
+                        <div class="inner-ball"></div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
                 <br>
                 <button>SAVE</button>
             </div>
