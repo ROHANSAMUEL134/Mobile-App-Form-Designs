@@ -35,7 +35,7 @@
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
         .container img{
-            margin-top: 50px;
+            margin-top: 100px;
             width:125px;
             height:125px;
             border-radius: 50%;
@@ -56,7 +56,7 @@
             font-size: 18px;
             color: rgb(109, 109, 109);
             background: #fff;
-            transform: translate(95px,50px);
+            transform: translate(95px,100px);
         }
         .sex{
             display: flex;
@@ -64,9 +64,28 @@
             margin-top: 10px;
         }
         .sex .radio-btn{
-            width:25px;
-            height:10px;
-            background-color: gray;
+            width:30px;
+            height:12px;
+            background-color: rgb(211, 211, 211);
+            border-radius: 10px;
+        }
+        .sex .radio-btn .inner-ball{
+            background-color: #797979;
+            width:16px;
+            height:16px;
+            border-radius: 50%;
+            float: left;
+            transform: translateY(-2px);
+        }
+        .sex p{
+            position: absolute;
+            color: #999999;
+        }
+        .sex #M{
+            transform: translate(-70px,-7px);
+        }
+        .sex #F{
+            transform: translate(70px,-7px);
         }
     </style>
 </head>
@@ -129,11 +148,13 @@
                 </div>
                 <div class="sex">
                     <div class="radio-btn" id="male">
-                        <div class="inner-ball"></div>
+                        <div class="inner-ball" id="male-toggler"></div>
                     </div>
+                    <p id="M">Male</p>
                     <div class="radio-btn" id="female">
-                        <div class="inner-ball"></div>
+                        <div class="inner-ball" id="female-toggler"></div>
                     </div>
+                    <p id="F">Female</p>
                     <div>
 
                     </div>
@@ -143,6 +164,38 @@
             </div>
         </div>        
     </center>
-        
+    <script>
+        const male = document.getElementById("male");
+        const maleToggler = document.getElementById("male-toggler");
+        const female = document.getElementById("female");
+        const femaleToggler = document.getElementById("female-toggler");
+        male.addEventListener("click", () => {
+            
+            if(maleToggler.style.float!="right"){
+                if(femaleToggler.style.backgroundColor!="#797979"){
+                    femaleToggler.style.float="left";
+                    femaleToggler.style.backgroundColor="#797979"
+                }
+                maleToggler.style.float="right";
+                maleToggler.style.backgroundColor="#008dc5";
+            } else {
+                maleToggler.style.float="left";
+                maleToggler.style.backgroundColor="#797979"
+            }
+        });
+        female.addEventListener("click", () => {
+            if(femaleToggler.style.float!="right"){
+                if(maleToggler.style.backgroundColor!="#797979"){
+                    maleToggler.style.float="left";
+                    maleToggler.style.backgroundColor="#797979"
+                }
+                femaleToggler.style.float="right";
+                femaleToggler.style.backgroundColor="#008dc5";
+            } else {
+                femaleToggler.style.float="left";
+                femaleToggler.style.backgroundColor="#797979"
+            }
+        });
+    </script>
 </body>
 </html>
