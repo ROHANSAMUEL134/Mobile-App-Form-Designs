@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .input-icon-container{
+            transform: translateX(-20px);
+            margin-bottom: 10px;
+        }
+        .container{
+            padding: 15px;
+            padding-top: 30px;
+            background: linear-gradient(to bottom, rgb(211, 9, 110) 0%, rgb(155, 0, 194) 40%, rgba(194, 194, 194, 0.363) 40%);
+    
+        }
+        @media only screen and (min-width: 800px) {
+            .container{
+                width:400px;
+            }
+        }
+        .personal-details{
+            padding:20px 0px;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        .container img{
+            margin-top: 100px;
+            width:125px;
+            height:125px;
+            border-radius: 50%;
+        }
+        span{
+            color: #fff;
+            font-size: large;
+            font-weight: 500;
+        } 
+        .pwd{
+            margin:30px auto 20px auto;
+        }
+        .remember-forgot{
+            width:80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .remember{
+            color: #999999;
+            font-size: 14px;
+        }
+        .forgot{
+            font-size: 14px;
+            color:rgb(155, 0, 194);
+        }
+        .connect{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .connect p:nth-child(1){
+            font-size: 13px;
+            color: #999999;
+        }
+        .connect p:nth-child(2){
+            font-size: 14px;
+            color: rgb(155, 0, 194);
+        }
+        .social-divider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-divider+img{
+            height:auto;
+            border-radius: 0px;
+            margin-top: 20px;
+        }
+        .line{
+            height: 1px;
+            width:40px;
+            background-color: rgb(155, 0, 194);
+        }
+        .or{
+            color: #999999;
+            border: 1px solid rgb(155, 0, 194);
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <img src="../logo.jpeg">
+            <br>
+            <span>Focus Logic</span>
+            <div class="personal-details">
+                <h1>SIGN IN</h1>
+                <br>
+                <div class="input-icon-container">
+                    <i class="fa fa-user"></i>
+                    <input placeholder="User Name...">
+                </div>             
+                
+                <div class="input-icon-container pwd">
+                    <i class="fa fa-lock"></i>
+                    <input placeholder="Password...">
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox">
+                        Remember me
+                    </div>
+                    <div class="forgot">Forgot Password</div>
+                </div>
+                <br>
+                <button>SIGN IN</button>
+                <div class="connect">
+                    <p>Still not Connected?&nbsp;</p>
+                    <p>&nbsp;Sign Up</p>
+                </div>
+
+                <br><br>
+                
+                <div class="social-divider">
+                    <div class="line"></div>
+                    <div class="or">OR</div>
+                    <div class="line"></div>
+                </div>
+                <img src="../facebook-twitter.jpg">
+            </div>
+        </div>        
+    </center>
+    
+</body>
+</html>
